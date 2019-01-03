@@ -27,10 +27,22 @@ killall Dock
 ``
 
 
+
+
 ## Shell
 
+### Hyper
+
+Instal [Hyper](https://hyper.is) terminal with following plugins:
+
+- `hyperterm-spacegray`
+- `hypercwd`
+- `hyper-pane`
+
+
+### ZSH
 - install ZSH shell
-- install 
+- install [Prezto](https://medium.com/@oldwestaction/beautifying-your-terminal-with-zsh-prezto-powerlevel9k-9e8de2023046)
 
 
 ## Sublime Text
@@ -38,12 +50,12 @@ killall Dock
 Download and install [Sublime Text 3](https://www.sublimetext.com/) and [Package Control](https://packagecontrol.io/installation).
 
 
-### `sublime` command
+### `subl` command
 
 First navigate to `/usr/local/bin` and then run:
 
 ``
-ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" sublime
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" subl
 ``
 
 ### packages
