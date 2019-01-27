@@ -61,6 +61,7 @@ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" subl
 ### packages
 
 - [Bracket​Highlighter](https://packagecontrol.io/packages/BracketHighlighter)
+- [Sublime​Code​Intel](https://packagecontrol.io/packages/SublimeCodeIntel)
 - [Theme - Spacegray](https://packagecontrol.io/packages/Theme%20-%20Spacegray)
 
 
