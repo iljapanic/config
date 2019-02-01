@@ -1,0 +1,22 @@
+#!/bin/bash
+
+CONFIG_DIR="$HOME/dev/config"
+
+# sublime
+SUBL_PREF=$HOME/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+SUBL_PACKAGES=$HOME/.config/sublime-text-3/Packages/User/Package\ Control.sublime-settings
+SUBLIME_KEYBOARD=$HOME/.config/sublime-text-3/Packages/User/Default\ \(Linux\).sublime-keymap
+
+yes | \cp -rf "$SUBL_PREF" "$CONFIG_DIR/sublime/"
+yes | \cp -rf "$SUBL_PACKAGES" "$CONFIG_DIR/sublime/"
+yes | \cp -rf "$SUBLIME_KEYBOARD" "$CONFIG_DIR/sublime/"
+
+# zsh
+yes | \cp -rf "$HOME/.zshrc" "$CONFIG_DIR"
+yes | \cp -rf "$HOME/.zpreztorc" "$CONFIG_DIR"
+
+# scripts
+yes | \cp -rf "$HOME/scripts/" "$CONFIG_DIR"
+
+# hyper
+yes | \cp -rf "$HOME/.hyper.js" "$CONFIG_DIR"

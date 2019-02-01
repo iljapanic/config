@@ -4,13 +4,13 @@
 	"fold_buttons": false,
 	"font_face": "Fira Code Regular",
 	"font_size": 12,
-	"spacegray_fileicons": true,
-	"spacegray_sidebar_font_small": true,
-	"spacegray_sidebar_tree_small": true,
-	"spacegray_tabs_small": true,
-	"theme": "Spacegray.sublime-theme",
 	"ignored_packages":
 	[
 		"Vintage"
 	],
+	"spacegray_fileicons": true,
+	"spacegray_sidebar_font_small": true,
+	"spacegray_sidebar_tree_small": true,
+	"spacegray_tabs_small": true,
+	"theme": "Spacegray.sublime-theme"
 }
