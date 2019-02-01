@@ -1,0 +1,5 @@
+[
+	{ "keys": ["ctrl+b"], "command": "toggle_side_bar" },
+	{ "keys": ["ctrl+up"], "command": "swap_line_up" },
+	{ "keys": ["ctrl+down"], "command": "swap_line_down"}
+]
