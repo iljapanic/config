@@ -1,73 +1,71 @@
-# Setting up a new MacOS
+# Config
 
+## Basics
 
+### Terminal
 
-## Essential configuration
+Install [Hyper](https://hyper.is) terminal and set it as default:
 
-### enable tab dialog control
-Enable **`All Controls`** in `Preferences -> Keyboard -> Shortcuts -> Full Keyboard Access`
+```
+sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /opt/Hyper/hyper 50
+```
 
-### show hidden files by default
-run:
+### Default shell
+Install Zsh shell
 
-``
-defaults write com.apple.finder AppleShowAllFiles YES
-``
+```
+apt install zsh
+```
 
-### disable desktop switching
+Install [Prezto](https://github.com/sorin-ionescu/prezto)
+```
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+```
 
-run:
+Copy default Zsh configuration
+```
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+don
+```
 
-``
-defaults write com.apple.dock workspaces-auto-swoosh -bool NO
-``
+Set Zsh as default shell
+```
+chsh -s /bin/zsh
+```
 
-``
-killall Dock
-``
+### Code editor
 
+Install [Sublime Text 3](https://www.sublimetext.com/docs/3/linux_repositories.html#apt) and [Package Control](https://packagecontrol.io/installation).
 
-
-
-## Shell
-
-### Hyper
-
-Instal [Hyper](https://hyper.is) terminal with following plugins:
-
-- `hyperterm-spacegray`
-- `hypercwd`
-- `hyper-pane`
-
-
-### ZSH
-- install ZSH shell
-- install [Prezto](https://medium.com/@oldwestaction/beautifying-your-terminal-with-zsh-prezto-powerlevel9k-9e8de2023046)
-
-
-## Sublime Text
-
-Download and install [Sublime Text 3](https://www.sublimetext.com/) and [Package Control](https://packagecontrol.io/installation).
-
-
-### `subl` command
-
-First navigate to `/usr/local/bin` and then run:
-
-``
-ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" subl
-``
-
-### packages
+#### packages
 
 - [Bracket​Highlighter](https://packagecontrol.io/packages/BracketHighlighter)
 - [Sublime​Code​Intel](https://packagecontrol.io/packages/SublimeCodeIntel) (requires [CodeIntel](https://www.sublimecodeintel.com/docs/installation/#1-install-codeintel))
 - [Theme - Spacegray](https://packagecontrol.io/packages/Theme%20-%20Spacegray)
 
 
+
+
+
+## Tools & Utilities
+
+- [Krypton](https://krypt.co/docs/start/installation.html)
+- [Powerline fonts](https://github.com/powerline/fonts)
+
+
 ## Apps
 
-- [AppCleaner](https://freemacsoft.net/appcleaner/)
-- [Clementine](https://www.clementine-player.org/)
-- [IINA](https://lhc70000.github.io/iina/)
+## Dev
 
+
+
+### Writing and editing
+
+- [Remarkable](https://remarkableapp.github.io/)
+- [Typora](https://www.typora.io/)
+
+
+
+	

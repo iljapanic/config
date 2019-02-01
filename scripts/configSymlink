@@ -1,0 +1,21 @@
+#!/bin/bash
+
+CONFIG_DIR="$1"
+
+# hyper
+HYPER_SRC="$CONFIG_DIR/.hyper.js"
+HYPER_LINK="$HOME/.hyper.js"
+
+ln -sf "$HYPER_SRC" "$HYPER_LINK"
+
+# sublime
+SUBL_PREF=Preferences.sublime-settings
+SUBL_PACKAGES=Package\ Control.sublime-settings
+SUBL_KEYBOARD=Default\ \(Linux\).sublime-keymap
+
+SUBL_LINK_DIR=$HOME/.config/sublime-text-3/Packages/User
+
+
+ln -sf "$CONFIG_DIR/sublime/$SUBL_PREF" "$SUBL_LINK_DIR/$SUBL_PREF"
+ln -sf "$CONFIG_DIR/sublime/$SUBL_PACKAGES" "$SUBL_LINK_DIR/$SUBL_PACKAGES"
+ln -sf "$CONFIG_DIR/sublime/$SUBL_KEYBOARD" "$SUBL_LINK_DIR/$SUBL_KEYBOARD"
