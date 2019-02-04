@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+if [[ $1 == "LeftQuoteDouble" ]]; then
+	# xdotool key U2200
+	xdotool type "asssss"
+fi
+
+
+if [[ $1 == "RightQuoteDouble" ]]; then
+	xdotool type ””
+fi
+

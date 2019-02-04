@@ -151,5 +151,12 @@ module.exports = {
   keymaps: {
     // Example
     // 'window:devtools': 'cmd+alt+o',
+    'pane:close':'ctrl+w',
+    'pane:next': 'ctrl+]',
+    'pane:prev': 'ctrl+[',
+    'pane:splitVertical': 'ctrl+shift+d',
+    'pane:splitHorizontal': 'ctrl+d',
+    'tab:new': 'ctrl+t',
+    'window:new': 'ctrl+n'
   },
 };

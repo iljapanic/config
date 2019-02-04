@@ -47,12 +47,26 @@ Install [Sublime Text 3](https://www.sublimetext.com/docs/3/linux_repositories.h
 
 
 
+## Polybar
+
+Disable default Ubuntu top bar using [GNOME extensions](https://itsfoss.com/gnome-shell-extensions/) 
 
 
 ## Tools & Utilities
 
 - [Krypton](https://krypt.co/docs/start/installation.html)
 - [Powerline fonts](https://github.com/powerline/fonts)
+
+
+### File preview
+
+```sudo apt-get install gnome-sushi```
+
+```sudo apt-get install unoconv```
+
+### Change login background color
+
+[https://vitux.com/how-to-change-login-lock-screen-background-in-ubuntu/](https://vitux.com/how-to-change-login-lock-screen-background-in-ubuntu/)
 
 
 ## Apps
