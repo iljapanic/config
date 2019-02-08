@@ -63,17 +63,34 @@ Disable default Ubuntu top bar using [GNOME extensions](https://itsfoss.com/gnom
 ## Tools & Utilities
 
 - [Krypton](https://krypt.co/docs/start/installation.html)
+
 - [Powerline fonts](https://github.com/powerline/fonts)
+
 - [gparted](https://gparted.org/download.php) - ``sudo apt-get install gparted``
+
 - [Etcher](https://www.balena.io/etcher/)
+
 - [Transmission](https://transmissionbt.com/download/)
+
 - [sshfs](https://github.com/libfuse/sshfs) - ``sudo apt install -y sshfs``
+
 - [micro](https://micro-editor.github.io/index.html)
+
 - xclip - ``sudo apt-get install xclip``
+
 - nmap - ``sudo apt-get install nmap``
+
 - [nutty](https://babluboy.github.io/nutty/)
+
 - [htop](https://hisham.hm/htop/index.php?page=downloads#binaries)
+
 - [Angry IP Scanner](https://angryip.org/download/#linux)
+
+- [neofetch](https://github.com/dylanaraps/neofetch)
+
+- [redshift](https://github.com/jonls/redshift)
+
+  
 
 ### File preview
 
