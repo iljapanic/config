@@ -5,8 +5,19 @@
 	],
 	"installed_packages":
 	[
+		"All Autocomplete",
+		"AutoFileName",
+		"Babel",
 		"BracketHighlighter",
+		"Color Highlight",
+		"Emmet",
+		"GitGutter",
+		"HTML-CSS-JS Prettify",
+		"HTMLAttributes",
 		"Package Control",
-		"Theme - Spacegray"
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"Theme - Spacegray",
+		"TrailingSpaces"
 	]
 }
