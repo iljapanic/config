@@ -35,6 +35,14 @@ Set Zsh as default shell
 chsh -s /bin/zsh
 ```
 
+
+### Packages
+
+``xclip``
+
+
+
+
 ### Code editor
 
 Install [Sublime Text 3](https://www.sublimetext.com/docs/3/linux_repositories.html#apt) and [Package Control](https://packagecontrol.io/installation).
@@ -49,14 +57,23 @@ Install [Sublime Text 3](https://www.sublimetext.com/docs/3/linux_repositories.h
 
 ## Polybar
 
-Disable default Ubuntu top bar using [GNOME extensions](https://itsfoss.com/gnome-shell-extensions/) 
+Disable default Ubuntu top bar using [GNOME extensions](https://itsfoss.com/gnome-shell-extensions/)
 
 
 ## Tools & Utilities
 
 - [Krypton](https://krypt.co/docs/start/installation.html)
 - [Powerline fonts](https://github.com/powerline/fonts)
-
+- [gparted](https://gparted.org/download.php) - ``sudo apt-get install gparted``
+- [Etcher](https://www.balena.io/etcher/)
+- [Transmission](https://transmissionbt.com/download/)
+- [sshfs](https://github.com/libfuse/sshfs) - ``sudo apt install -y sshfs``
+- [micro](https://micro-editor.github.io/index.html)
+- xclip - ``sudo apt-get install xclip``
+- nmap - ``sudo apt-get install nmap``
+- [nutty](https://babluboy.github.io/nutty/)
+- [htop](https://hisham.hm/htop/index.php?page=downloads#binaries)
+- [Angry IP Scanner](https://angryip.org/download/#linux)
 
 ### File preview
 
@@ -82,4 +99,4 @@ Disable default Ubuntu top bar using [GNOME extensions](https://itsfoss.com/gnom
 
 
 
-	
+
