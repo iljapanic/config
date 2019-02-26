@@ -1,0 +1,82 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1040,
+       "width": 514,
+       "x": 0,
+       "y": 0
+    },
+    "name": "/home/yubot",
+    "percent": 0.7,
+    "swallows": [
+       {
+       "class": "^Spacefm$"
+       "instance": "^spacefm$",
+       // "title": "^\\/home\\/yubot$",
+       // "transient_for": "^$",
+       // "window_role": "^file_manager$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    // splitv split container with 2 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.3,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1040,
+               "width": 636,
+               "x": 642,
+               "y": 38
+            },
+            "name": "sketchpad.md - Typora",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Typora$",
+               "instance": "^typora$",
+               "title": "^sketchpad\\.md\\ \\-\\ Typora$",
+               // "transient_for": "^$",
+               // "window_role": "^browser\\-window$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "user_off",
+            "geometry": {
+               "height": 453,
+               "width": 654,
+               "x": 0,
+               "y": 0
+            },
+            "name": "/bin/zsh",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Terminator$",
+               "instance": "^terminator$",
+               // "title": "^\\/bin\\/zsh$",
+               // "transient_for": "^$",
+               // "window_role": "^floating$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
