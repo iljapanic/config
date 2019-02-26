@@ -237,8 +237,92 @@ install [browser-mpris2](https://github.com/otommod/browser-mpris2) for audio co
 
 ## Useful
 
-
-
-
-
 [mons](https://github.com/Ventto/mons)
+
+
+
+
+
+
+
+
+
+## Install
+
+
+
+### install official packages
+
+```bash
+sudo apt update
+```
+
+```bash
+sudo apt install chromium-browser gdebi-core git neofetch rofi zsh
+```
+
+
+
+## configure zsh
+
+first install zsh prezto:
+
+```sh
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+```
+
+copy default zsh configuration:
+
+```bash
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
+```
+
+
+
+
+
+set zsh as default shell:
+
+```bash
+chsh -s `which zsh`
+```
+
+
+
+
+
+### install and configure Krypton
+
+``curl https://krypt.co/kr | sh``
+
+``kr pair``
+
+
+### install i3-gaps
+[follow instructions](https://github.com/Airblader/i3/wiki/Compiling-&-Installing)
+
+
+
+### install Polybar
+
+```bash
+sudo apt install cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xkb-dev pkg-config python-xcbgen xcb-proto libxcb-xrm-dev i3-wm libasound2-dev libmpdclient-dev libiw-dev libcurl4-openssl-dev libpulse-dev
+```
+
+
+
+### install unofficial packages
+
+```bash
+wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
+sudo add-apt-repository 'deb https://typora.io/linux ./'
+sudo apt update
+```
+
+```bash
+sudo apt install typora
+```
+
