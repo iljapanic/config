@@ -1,17 +1,11 @@
 ## Mac
 
-
-
-
-
 ### Essential configuration
 
 #### enable tab dialog control
-Enable **`All Controls`** in `Preferences -> Keyboard -> Shortcuts -> Full Keyboard Access`
+`Preferences -> Keyboard -> Shortcuts -> Full Keyboard Access` : enable **All Controls**
 
 #### show hidden files by default
-run:
-
 ``
 defaults write com.apple.finder AppleShowAllFiles YES
 ``
@@ -30,45 +24,132 @@ killall Dock
 
 
 
+### Tools
 
-### Shell
+### Alacritty + tmux
 
-#### Hyper
+install:
 
-Instal [Hyper](https://hyper.is) terminal with following plugins:
+```shell
+brew cask install alacritty
+```
 
-- `hyperterm-spacegray`
-- `hypercwd`
-- `hyper-pane`
+then tmux:
 
-
-#### ZSH
-- install ZSH shell
-- install [Prezto](https://medium.com/@oldwestaction/beautifying-your-terminal-with-zsh-prezto-powerlevel9k-9e8de2023046)
-
-
-### Sublime Text
-
-Download and install [Sublime Text 3](https://www.sublimetext.com/) and [Package Control](https://packagecontrol.io/installation).
+```shell
+brew install tmux
+```
 
 
-#### `subl` command
 
-First navigate to `/usr/local/bin` and then run:
+### [Homebrew](https://brew.sh/)
 
-``
-ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" subl
-``
+install:
 
-#### packages
-
-- [Bracket​Highlighter](https://packagecontrol.io/packages/BracketHighlighter)
-- [Sublime​Code​Intel](https://packagecontrol.io/packages/SublimeCodeIntel) (requires [CodeIntel](https://www.sublimecodeintel.com/docs/installation/#1-install-codeintel))
-- [Theme - Spacegray](https://packagecontrol.io/packages/Theme%20-%20Spacegray)
+```shell
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
 
-### Apps
 
-- [AppCleaner](https://freemacsoft.net/appcleaner/)
-- [Clementine](https://www.clementine-player.org/)
-- [IINA](https://lhc70000.github.io/iina/)
+### rbenv
+
+install:
+
+```shell
+brew install rbenv
+```
+
+set up ``rbenv`` in the shell:
+
+```shell
+rbenv init
+```
+
+closer terminal, open new window and check the installation:
+
+```shell
+curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
+```
+
+install a newer version of Ruby:
+
+```shell
+rbenv install 2.6.3
+```
+
+and set it as global:
+
+```shell
+rbenv global 2.6.3
+```
+
+
+
+### [colorls](https://github.com/athityakumar/colorls#installation)
+
+```
+gem install colorls
+```
+
+get a Nerd Font:
+
+```shell
+brew cask install font-sourcecodepro-nerd-font
+```
+
+make sure to configure the terminal to use the font
+
+### ZSH
+
+install:
+
+```shell
+brew install zsh
+```
+
+set zsh as default shell:
+
+```shell
+chsh -s `which zsh`
+```
+
+#### [Prezto](https://medium.com/@oldwestaction/beautifying-your-terminal-with-zsh-prezto-powerlevel9k-9e8de2023046)
+
+clone first:
+
+```shell
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+```
+
+copy default configuration (make sure you are running it inside zsh):
+
+```shell
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
+```
+
+add ``prezto-contrib`` modules:
+
+```shell
+cd $ZPREZTODIR
+```
+
+```shell
+git clone --recurse-submodules https://github.com/belak/prezto-contrib contrib
+```
+
+#### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/)
+
+```shell
+brew install zsh-syntax-highlighting
+```
+
+(don't forget to source it in **``.zshrc``**)
+
+
+
+and finally get **``.zshrc``** and **``.zpreztorc``** from this repo 
+
