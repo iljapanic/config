@@ -1,4 +1,4 @@
-## Mac
+## MacOS setup
 
 ### Essential configuration
 
@@ -24,27 +24,11 @@ killall Dock
 
 
 
-### Tools
-
-### Alacritty + tmux
-
-install:
-
-```shell
-brew cask install alacritty
-```
-
-then tmux:
-
-```shell
-brew install tmux
-```
 
 
+## Homebrew
 
-### [Homebrew](https://brew.sh/)
-
-install:
+first thing's first:
 
 ```shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -52,9 +36,11 @@ install:
 
 
 
-### rbenv
+## Dev environments
 
-install:
+### Ruby
+
+install ``rbenv``:
 
 ```shell
 brew install rbenv
@@ -86,19 +72,83 @@ rbenv global 2.6.3
 
 
 
-### [colorls](https://github.com/athityakumar/colorls#installation)
+### Python
 
-```
-gem install colorls
-```
-
-get a Nerd Font:
+install ``pyenv``:
 
 ```shell
-brew cask install font-sourcecodepro-nerd-font
+brew install readline xz pyenv openssl
 ```
 
-make sure to configure the terminal to use the font
+when running on Mojave or higher you also need to [install additional headers](https://github.com/pyenv/pyenv/wiki/Common-build-problems) (make sure command line tools are installed ``xcode-select —install``):
+
+```shell
+sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
+```
+
+install desired version of Python:
+
+```shell
+pyenv install 3.7.3
+```
+
+set it globally:
+
+```shell
+pyenv global 3.7.3
+```
+
+#### yarn
+
+make sure that Node is already installed
+
+```shell
+brew install yarn
+```
+
+
+
+### Node
+
+install ``nvm``:
+
+```shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+```
+
+install the latest version:
+
+```shell
+nvm install node
+```
+
+above also sets it as default node 
+
+
+
+
+
+
+
+### Tools
+
+
+
+### Alacritty + tmux
+
+install:
+
+```shell
+brew cask install alacritty
+```
+
+then tmux:
+
+```shell
+brew install tmux
+```
+
+
 
 ### ZSH
 
@@ -113,6 +163,8 @@ set zsh as default shell:
 ```shell
 chsh -s `which zsh`
 ```
+
+
 
 #### [Prezto](https://medium.com/@oldwestaction/beautifying-your-terminal-with-zsh-prezto-powerlevel9k-9e8de2023046)
 
@@ -141,6 +193,8 @@ cd $ZPREZTODIR
 git clone --recurse-submodules https://github.com/belak/prezto-contrib contrib
 ```
 
+
+
 #### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/)
 
 ```shell
@@ -148,6 +202,36 @@ brew install zsh-syntax-highlighting
 ```
 
 (don't forget to source it in **``.zshrc``**)
+
+
+
+### [colorls](https://github.com/athityakumar/colorls#installation)
+
+```
+gem install colorls
+```
+
+get a Nerd Font:
+
+```shell
+brew cask install font-sourcecodepro-nerd-font
+```
+
+make sure to configure the terminal to use the font
+
+
+
+#### [speedtest-cli](pip install speedtest-cli)
+
+install:
+
+```shell
+pip install speedtest-cli
+```
+
+
+
+
 
 
 
